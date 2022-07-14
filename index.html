@@ -14,42 +14,36 @@
       </div>
       <h1>Rule of Tens</h1>
       <h2>Initial Fluid Demand for the Burn Patient</h2>
-      <p>
-        Intro.... Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Suscipit aut fugiat illo officiis beatae vel officia natus libero quas,
-        necessitatibus eveniet dolorum, fugit saepe temporibus esse incidunt!
-        Veritatis, nesciunt accusamus. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Soluta ducimus dolores ex ipsa quis, veritatis ut
-        blanditiis repudiandae, tempora dolor totam eos veniam. Quo cum at,
-        natus error rerum reiciendis?
-      </p>
+  <hr>
     </header>
-    <hr />
     <h2>Calculate Initial Fluid Demand:</h2>
     <div class="container-main">
       <div class="calculator">
-        <input id="weightInput" type="text" placeholder="Kgs" />
-        <input id="tbsaInput" type="text" placeholder="%" />
+        <input id="weightInput" type="text" placeholder="Pt. Wt. (Kgs)" />
+        <input id="tbsaInput" type="text" placeholder="% TBSA" />
         <button id="calcSubmit">Calculate</button>
         <button id="calcClear">Clear</button>
       </div>
       <div class="results">
-        <h4>Parient's Weight: <span id="weightPrint">0</span> Kgs</h4>
-        <h4>%TBSA: <span id="tbsaPrint">0</span> %</h4>
-        <h4>
+        <p>Parient's Weight: <span id="weightPrint">0</span> Kgs</p>
+        <p>%TBSA: <span id="tbsaPrint">0</span> %</p>
+        <p>
           Initial 24hr Fluid Demand: <span id="initialDemand">0</span> mls/24hrs
-        </h4>
-        <h4>Infusion Rate Breakdown:</h4>
-        <h4><span id="rateHour">0</span> mls/hr</h4>
-        <h4>
-          10gtts: <span id="">0</span> gtts/min | <span id="">0</span> gtts/sec
-        </h4>
-        <h4>
-          15gtts: <span id="">0</span> gtts/min | <span id="">0</span> gtts/sec
-        </h4>
-        <h4>
-          20gtts: <span id="">0</span> gtts/min | <span id="">0</span> gtts/sec
-        </h4>
+        </p>
+        <p>Infusion Rate Breakdown:</p>
+        <p>Per Hour: <span id="rateHour">0</span> mls/hr</p>
+        <p>
+          10gtts: <span id="tenMin">0</span> gtts/min | <span id="tenSec">0</span> gtts/sec
+        </p>
+        <p>
+          15gtts: <span id="fifteenMin">0</span> gtts/min | <span id="fifteenSec">0</span> gtts/sec
+        </p>
+        <p>
+          20gtts: <span id="twentyMin">0</span> gtts/min | <span id="twentySec">0</span> gtts/sec
+        </p>
+        <p>
+          60gtts: <span id="sixtyMin">0</span> gtts/min | <span id="sixtySec">0</span> gtts/sec
+        </p>
       </div>
     </div>
     <footer>
