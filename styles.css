@@ -1,0 +1,47 @@
+body {
+  display: grid;
+  justify-content: center;
+  font-family: monospace;
+}
+
+header {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  width: 90vw;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  width: 70vw;
+  color: rgb(167, 0, 0);
+}
+
+header p {
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+.container-main {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+input {
+  width: 100px;
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  width: 90vw;
+}
+
+img {
+  width: 200px;
+}

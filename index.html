@@ -9,7 +9,11 @@
   </head>
   <body>
     <header>
+      <div>
+        <img src="/asclep.png" />
+      </div>
       <h1>Rule of Tens</h1>
+      <h2>Initial Fluid Demand for the Burn Patient</h2>
       <p>
         Intro.... Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Suscipit aut fugiat illo officiis beatae vel officia natus libero quas,
@@ -20,31 +24,34 @@
         natus error rerum reiciendis?
       </p>
     </header>
-    <div class="calculator">
-      <h2>Calculate Initial Fluid Demand:</h2>
-      <form>
-        <input
-          id="weight-input"
-          name="random"
-          type="number"
-          placeholder="Patient's Weight (Kgs)"
-        />
-        <input id="tbsa-input" type="number" placeholder="%TBSA" />
-        <button id="calc-submit" type="submit">Calculate</button>
-      </form>
+    <hr />
+    <h2>Calculate Initial Fluid Demand:</h2>
+    <div class="container-main">
+      <div class="calculator">
+        <input id="weightInput" type="text" placeholder="Kgs" />
+        <input id="tbsaInput" type="text" placeholder="%" />
+        <button id="calcSubmit">Calculate</button>
+        <button id="calcClear">Clear</button>
+      </div>
+      <div class="results">
+        <h4>Parient's Weight: <span id="weightPrint">0</span> Kgs</h4>
+        <h4>%TBSA: <span id="tbsaPrint">0</span> %</h4>
+        <h4>
+          Initial 24hr Fluid Demand: <span id="initialDemand">0</span> mls/24hrs
+        </h4>
+        <h4>Infusion Rate Breakdown:</h4>
+        <h4><span id="rateHour">0</span> mls/hr</h4>
+        <h4>
+          10gtts: <span id="">0</span> gtts/min | <span id="">0</span> gtts/sec
+        </h4>
+        <h4>
+          15gtts: <span id="">0</span> gtts/min | <span id="">0</span> gtts/sec
+        </h4>
+        <h4>
+          20gtts: <span id="">0</span> gtts/min | <span id="">0</span> gtts/sec
+        </h4>
+      </div>
     </div>
-    <div class="results">
-      <h4 id="weight-print">Parient's Weight:</h4>
-      <h4 id="tbsa-print">%TBSA:</h4>
-      <h4>Initial Fluid Demand:</h4>
-    </div>
-    <div class="results">
-      <h4>Infusion Rate Breakdown:</h4>
-      <h4>/hr</h4>
-      <h4>/min</h4>
-      <h4>/sec</h4>
-    </div>
-
     <footer>
       <p>Github <a href="https://github.com/JH175">JH175</a></p>
     </footer>
