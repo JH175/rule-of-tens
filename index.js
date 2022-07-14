@@ -3,7 +3,6 @@ let tbsaInput = document.querySelector('#tbsaInput');
 let calcSubmit = document.querySelector('#calcSubmit');
 let weightPrint = document.querySelector('#weightPrint');
 let tbsaPrint = document.querySelector('#tbsaPrint');
-let initialDemand = document.querySelector('#initialDemand');
 let rateHour = document.querySelector('#rateHour');
 let tenMin = document.querySelector('#tenMin');
 let fifteenMin = document.querySelector('#fifteenMin');
@@ -16,7 +15,6 @@ let sixtySec = document.querySelector('#sixtySec');
 let results = [
   weightPrint,
   tbsaPrint,
-  initialDemand,
   rateHour,
   tenMin,
   fifteenMin,
@@ -47,7 +45,6 @@ calcSubmit.addEventListener('click', () => {
   let fifteenGttsSec = Math.round(fifteenGttsMin / 60);
   let twentyGttsSec = Math.round(twentyGttsMin / 60);
   let sixtyGttsSec = Math.round(sixtyGttsMin / 60);
-  initialDemand.textContent = result;
   rateHour.textContent = ratePerHour;
   tenMin.textContent = tenGttsMin;
   fifteenMin.textContent = fifteenGttsMin;

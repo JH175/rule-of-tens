@@ -3,12 +3,6 @@
   font-family: monospace;
 }
 
-body {
-  display: grid;
-  justify-content: center;
-}
-
-
 header {
   display: grid;
   justify-content: center;
@@ -25,6 +19,7 @@ span {
 }
 
 hr {
+  margin: auto;
   width: 70vw;
   background-color: #ae0000;
   border: solid 1px #ae0000;
@@ -50,11 +45,14 @@ header p {
 }
 
 input {
-  width: 100px;
+  width: 200px;
   margin: 2px;
+  padding: 5px 10px;
   border-radius: 2px;
   border: 1px solid;
   transition-duration: 500ms;
+  font-size: 16px;
+  outline: none;
 }
 
 input:hover {
@@ -63,10 +61,13 @@ input:hover {
 
 button {
   margin: 2px;
+  padding: 5px 10px;
   border-radius: 2px;
   border: #323232 1px solid;
   transition-duration: 500ms;
   cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 button:hover {
@@ -91,7 +92,7 @@ img {
 }
 
 img:hover {
-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 p {
