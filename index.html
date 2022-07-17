@@ -5,31 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fluid Calc | Rule Of Tens</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" /> 
   </head>
   <body>
     <header>
       <div>
-        <img src="/asclep.png" />
+        <img src="/SOL.png" />
       </div>
-      <h1>Rule of Tens</h1>
-      <h2>Fluid Management for Burn Patients</h2>
+        <h1>Rule of Tens</h1>
+        <h2>Fluid Management for Burn Patients</h2>
+        <div id="buttonContainer">        
+          <button id="themeToggle">
+          <img id="themeToggleImage" src="/dark.png" />
+        </button>
+      </div>
+  
+      </div>
       <hr />
     </header>
-    <h2>Calculate Initial Fluid Demand:</h2>
+    <h2>Initial Fluid Demand: <span id="rateHour">0</span> mls/hr</h2>
     <div class="container-main">
       <div class="calculator">
-        <input id="weightInput" type="text" placeholder="Pt. Wt. (Kgs)" />
-        <input id="tbsaInput" type="text" placeholder="% TBSA" />
+        <label for="weightInput">Pt's Weight (Adult)</label>
+        <input
+          id="weightInput"
+          type="number"
+          min="40"
+          placeholder="40kg Minimum"
+        />
+        <label for="weightInput">Total Body Surface Area (%)</label>
+        <input
+          id="tbsaInput"
+          type="number"
+          min="10"
+          step="10"
+          placeholder="Nearest 10%"
+        />
         <button id="calcSubmit">Calculate</button>
         <button id="calcClear">Clear</button>
       </div>
       <div class="results">
-        <p>Parient's Weight: <span id="weightPrint">0</span> Kgs</p>
-        <p>%TBSA: <span id="tbsaPrint">0</span> %</p>
-
-        <p>Infusion Rate Breakdown:</p>
-        <p>Per Hour: <span id="rateHour">0</span> mls/hr</p>
+        <p>Weight: <span id="weightPrint">0</span> Kgs</p>
+        <p>TBSA: <span id="tbsaPrint">0</span> %</p>
+        <h2>Rate Breakdown</h2>
         <p>
           10gtts: <span id="tenMin">0</span> gtts/min |
           <span id="tenSec">0</span> gtts/sec

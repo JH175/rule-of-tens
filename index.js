@@ -29,8 +29,13 @@ let results = [
 weightInput.addEventListener('change', () => {
   weightPrint.textContent = weightInput.value;
 });
-
+weightInput.addEventListener('keyup', () => {
+  weightPrint.textContent = weightInput.value;
+});
 tbsaInput.addEventListener('change', () => {
+  tbsaPrint.textContent = Math.round(tbsaInput.value);
+});
+tbsaInput.addEventListener('keyup', () => {
   tbsaPrint.textContent = Math.round(tbsaInput.value);
 });
 
@@ -62,4 +67,12 @@ calcClear.addEventListener('click', () => {
   });
   weightInput.value = '';
   tbsaInput.value = '';
+});
+
+const themeToggle = document.querySelector('#themeToggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  if (document.body.classList == 'dark') {
+    themeToggleImage.src = 'light.png';
+  } else themeToggleImage.src = 'dark.png';
 });
