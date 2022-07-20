@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burn Management</title>
+    <link rel="stylesheet" href="/src/assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Burn Management</h1>
+        <div>
+            <img src="/src/assets/img/SOL.png" />
+        </div>
+        <p>Initial Fluid Demand (Rule of Tens)</p>
+        <div class="button-container">
+            <button id="theme-toggle">
+                <img id="theme-toggle-image" src="/src/assets/img/dark.png" />
+            </button>
+        </div>
+
+    </header>
+    <hr />
+    <main>
+        <section>
+            <div class="calculator-container">
+                <div class="component-container">
+                    <label for="weight-input">Pt's Weight (kg)</label>
+                    <input id="weight-input" placeholder="40kg Minimum" type="number" min="40">
+                    <label for="tbsa-input">TBSA (%)</label>
+                    <input id="tbsa-input" placeholder="Nearest 10%" type="number" step="10" min="10">
+                    <button id="calculate-button">Calculate</button>
+                    <button id="clear-button">Clear</button>
+                </div>
+            </div>
+            <div class="results-container">
+                <div class="component-container">
+                    <h2>Initial Fluid Demand: <span id="rate-hour">0</span> mls/hr</h2>
+                    <p>Weight: <span id="weight-print">0</span> Kgs</p>
+                    <p>TBSA: <span id="tbsa-print">0</span> %</p>
+                    <h2>Rate Breakdown</h2>
+                    <p>
+                        10gtts: <span id="ten-min">0</span> gtts/min |
+                        <span id="ten-sec">0</span> gtts/sec
+                    </p>
+                    <p>
+                        15gtts: <span id="fifteen-min">0</span> gtts/min |
+                        <span id="fifteen-sec">0</span> gtts/sec
+                    </p>
+                    <p>
+                        20gtts: <span id="twenty-min">0</span> gtts/min |
+                        <span id="twenty-sec">0</span> gtts/sec
+                    </p>
+                    <p>
+                        60gtts: <span id="sixty-min">0</span> gtts/min |
+                        <span id="sixty-sec">0</span> gtts/sec
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+        <p>Jake 2022</p>
+        <p><a href="https://github.com/JH175">GitHub</a></p>
+        <p><a href="https://hink.dev">hink.dev</a></p>
+    </footer>
+    <script src="/src/assets/js/index.js"></script>
+    <script src="/src/assets/js/logic.js"></script>
+</body>
+
+</html>
